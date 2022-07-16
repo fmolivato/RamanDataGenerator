@@ -20,8 +20,6 @@ The python libraries needed are:
     numpy
     tensorflow
 
-...easly installable with **pip**
-
 ---
 
 Contributors are welcome :thumbsup:
