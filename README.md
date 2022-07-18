@@ -27,7 +27,7 @@ $$ sample_k = a·sample_i + (1-a)·sample_j $$
 This augmentation step is based on the assumption that two samples of the same class are semantically equal (natural class variability) + some sensor noise.
 
 3. on $sample_k$ apply a __slope__ of some __slope factor__, which is baseline linear error that emulates the fluorescence issue of some sensors.
-4. on $sample_k$ add a white gaussian noise the the signal
+4. on $sample_k$ apply addittive white gaussian noise to the signal
 
 Param|Type|Description
 -|---|---
