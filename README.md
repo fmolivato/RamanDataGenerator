@@ -3,7 +3,20 @@
 [![Generic badge](https://img.shields.io/badge/python-v3.6+-<COLOR>.svg)]() [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This project aims to offer a fast :zap: and reliable data augmentation generator of **Raman spectra**
+## Download
+You can download the python class by executing the following script in you target directory
+```
+wget https://raw.githubusercontent.com/fmolivato/RamanDataGenerator/master/raman_data_generator.py
+```
+## Usage
+```python
+from raman_data_generator import RamanDataGenerator
 
+dataset = RamanDataGenerator(...)
+
+for batch in dataset:
+    print(batch.shape)    # do something with the batch
+```
 ## Arguments
 
 ### Basic
