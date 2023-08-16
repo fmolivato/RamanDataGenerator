@@ -25,7 +25,7 @@ class RamanDataGenerator(tf.keras.utils.Sequence):
 
     def __post_init__(self):
         # transform to numpy for performance reasons
-        self.samples = self.df.iloc[:, 10:-1].to_numpy().astype("float32")
+        self.samples = self.df.to_numpy().astype("float32")
         self.labels = self.df.loc[:, "labels"].to_numpy().astype("uint32")
 
     def __len__(self):
